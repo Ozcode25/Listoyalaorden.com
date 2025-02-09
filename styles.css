@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .btn-mapa {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn-mapa:hover {
+    background-color: darkgreen;
+  }
+  
+  #carrito {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
