@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listo y a la Orden</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-green-600 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <h1 class="text-3xl font-bold">Listo y a la Orden</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#menu" class="hover:text-green-300">Menú</a></li>
+          <li><a href="#pedidos" class="hover:text-green-300">Pedidos Online</a></li>
+          <li><a href="#contacto" class="hover:text-green-300">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menú -->
+  <section id="menu" class="container mx-auto text-center py-10">
+    <h2 class="text-2xl font-semibold text-green-600">Nuestro Menú</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+      <div class="menu-item bg-white p-6 shadow-lg rounded-lg">
+        <img src="https://via.placeholder.com/150" alt="Plato 1" class="w-full h-40 object-cover rounded-t-lg">
+        <h3 class="text-xl mt-4">Plato 1</h3>
+        <p class="mt-2 text-gray-600">Descripción breve del plato 1.</p>
+        <button class="add-to-cart mt-4 bg-green-500 text-white py-2 px-4 rounded-md">Añadir</button>
+      </div>
+      <div class="menu-item bg-white p-6 shadow-lg rounded-lg">
+        <img src="https://via.placeholder.com/150" alt="Plato 2" class="w-full h-40 object-cover rounded-t-lg">
+        <h3 class="text-xl mt-4">Plato 2</h3>
+        <p class="mt-2 text-gray-600">Descripción breve del plato 2.</p>
+        <button class="add-to-cart mt-4 bg-green-500 text-white py-2 px-4 rounded-md">Añadir</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pedidos Online -->
+  <section id="pedidos" class="bg-gray-100 py-10">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl font-semibold text-green-600">Haz tu Pedido Online</h2>
+      <p class="mt-4">Selecciona tus platos favoritos y haz tu pedido en línea.</p>
+      <button id="ver-carrito" class="mt-6 bg-blue-600 text-white py-2 px-6 rounded-md">Ver Carrito</button>
+      <ul id="carrito" class="hidden mt-4"></ul>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="container mx-auto text-center py-10">
+    <h2 class="text-2xl font-semibold text-green-600">Contáctanos</h2>
+    <p class="mt-4">Encuéntranos en Waze o Google Maps.</p>
+    <div class="mt-6">
+      <a href="https://www.waze.com" target="_blank" class="btn-mapa">Ver en Waze</a>
+      <a href="https://www.google.com/maps" target="_blank" class="btn-mapa">Ver en Google Maps</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Listo y a la Orden. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
